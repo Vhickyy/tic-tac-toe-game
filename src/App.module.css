@@ -1,0 +1,12 @@
+.container {
+    width: 70%;
+    height: 80vh;
+    font-size: 1.3rem;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 10vh auto;
+    align-items: center;
+}

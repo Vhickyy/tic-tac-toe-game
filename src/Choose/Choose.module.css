@@ -1,0 +1,45 @@
+.select {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    height: 3rem;
+    /* background-color: blue; */
+}
+
+.btn {
+    width: 10rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+
+}
+
+.btn:hover {
+    background-color: burlywood;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid gray;
+}
+
+.space {
+    /* margin: 0 20px; */
+    width: 3rem;
+    border: none;
+    text-shadow: 2px black;
+    font-size: large;
+    background-color: gray;
+    border-radius: 4px;
+}
+
+.space:hover {
+    background-color: brown;
+    font-size: larger;
+    font-weight: bold;
+}
+
+h2 {
+    letter-spacing: 2px;
+}

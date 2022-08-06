@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Start from "./Start/Start";
+import { useTicTacContext } from "./TicTacToeContext";
+import AppCss from './App.module.css'
+import Choose from "./Choose/Choose";
+import TicTacToe from "./TicTacToe/TicTacToe";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const {start,playing,choose,...state} = useTicTacContext();
+ return (
+    <div className={AppCss.container}>
+      <h1>Tic Tac Toe</h1>
+     {start && <Start/>}
+     {choose && <Choose/>}
+     {playing && <TicTacToe/>}
     </div>
   );
 }
